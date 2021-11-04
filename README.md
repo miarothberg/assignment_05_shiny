@@ -1,2 +1,2 @@
 # assignment_05_shiny
-Shiny app for Assignment 5
+Code for the shiny app for Assignment 5. Final app is available here: https://miarothberg.shinyapps.io/assignment_05_shiny/
