@@ -3,6 +3,7 @@ library(shiny)       # for app
 library(tidyverse)   # for plotting and wrangling
 library(tidymodels)  # for modeling
 library(ranger)      # for random forest
+library(bslib)       # for theming
 
 data("lending_club")
 
@@ -43,9 +44,16 @@ stats_num <-
 
 
 ui <- fluidPage(
+  theme = bs_theme(#primary = "#123B60", 
+                  # secondary = "#D44420", 
+                  # base_font = list(font_google("Raleway"), "-apple-system", 
+                                    # "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", "Arial", 
+                                    # "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", 
+                                    # "Segoe UI Symbol"), 
+                   bootswatch = "cerulean"),
   
   # Application title
-  titlePanel("Lending Data Ceteris Parabus"),
+  titlePanel("Lending Data Ceteris Paribus"),
   
   # Sidebar with inputs
   sidebarLayout(
